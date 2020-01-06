@@ -10,7 +10,7 @@ import paho.mqtt.client as mqtt
 class MyMQTTClass(mqtt.Client):
 
     def on_connect(self, mqttc, obj, flags, rc):
-        pass
+        print("rc: "+str(rc))
 
     def on_message(self, mqttc, obj, msg):
         pass
@@ -25,7 +25,8 @@ class MyMQTTClass(mqtt.Client):
         pass
 
     def run(self):
-        # connect to mqtt.eclipse.org, port 80 
+        # connect to mqtt.eclipse.org, port 1883
+        # Dont forget the delay
         #self.connect()
         rc = 0
         while rc == 0:
