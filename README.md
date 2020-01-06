@@ -8,6 +8,7 @@ Then we will fire up a server.
 
 
 ## Client Exercises
+These exercises are based on the client.py file in this repository. 
 
 1. Connect to the MQTT server.
 
